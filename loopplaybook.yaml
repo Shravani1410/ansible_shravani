@@ -2,9 +2,9 @@
 - hosts: javaserver
   become: yes
   vars:
-    myvars: git
-    myvars: tree
-    myvars: apache2
+    myvar1: git
+    myvar2: tree
+    myvar3: apache2
   tasks: 
     - name: I want to display variable
       debug: 
