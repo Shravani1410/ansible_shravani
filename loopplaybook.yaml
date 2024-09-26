@@ -2,7 +2,7 @@
 - hosts: javaserver
   become: yes
   vars:
-    myvar1: git
+   
     myvar2: tree
     myvar3: apache2
   tasks: 
@@ -10,11 +10,11 @@
       debug: 
           msg: "{{myvar1}}"
 
-    - name: I want to install git,tree,apache2
+    - name: I want to install tree,apache2
       apt: 
         name: "{{item}}"
         state: present
       loop: 
-      - "{{myvar1}}"
+      
       - "{{myvar2}}"
       - "{{myvar3}}"
