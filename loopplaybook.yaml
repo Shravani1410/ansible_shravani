@@ -14,7 +14,7 @@
       apt: 
         name: "{{item}}"
         state: present
-      loop: 
+  loop: 
           -"{{item1}}"
           -"{{item2}}"
           -"{{item3}}"
