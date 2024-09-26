@@ -10,7 +10,7 @@
       debug: 
           msg: "{{myvar1}}"
 
-    - name: I want to install git"
+    - name: I want to install git
       apt: 
         name: "{{item}}"
         state: present
