@@ -12,7 +12,7 @@
 
       - name: I want to install java jdk 8 on ubuntu
         apt: 
-            name: "{{item1}}"
+            name: "{{item}}"
             state: present
         loop:
             - "{{myvar1}}"
