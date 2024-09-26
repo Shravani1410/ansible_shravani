@@ -1,0 +1,20 @@
+---
+- hosts: javaserver
+  become: yes
+  vars: 
+      myvar1: git
+      myvar2: wget
+      myvar3: tree
+  tasks: 
+      - name: I want to display myvar1
+        debug:
+            msg: "{{myvar1}}"
+
+      - name: I want to install java jdk 8 on ubuntu
+        apt: 
+            name: "{{item1}}"
+            state: present
+        loop:
+            - "{{myvar1}}"
+            - "{{myvar2}}"
+            - "{{myvar3}}"
