@@ -9,3 +9,12 @@
     - name: I want to display variable
       debug: 
           msg: "{{myvar1}}"
+
+    - name: I want to install git"
+      apt: 
+        name: "{{item}}"
+        state: present
+      loop: 
+          -"{{item1}}"
+          -"{{item2}}"
+          -"{{item3}}"
