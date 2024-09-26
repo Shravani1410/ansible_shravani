@@ -1,11 +1,11 @@
 ---
--hosts: javaserver
- become: yes
- vars:
+- hosts: javaserver
+  become: yes
+  vars:
     myvars: git
     myvars: tree
     myvars: apache2
-tasks: 
+  tasks: 
     - name: I want to display variable
       debug: 
           msg: "{{myvar1}}"
