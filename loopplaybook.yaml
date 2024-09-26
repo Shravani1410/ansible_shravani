@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: javaserver
   become: yes
   vars:
     myvar1: git
@@ -10,7 +10,7 @@
       debug: 
           msg: "{{myvar1}}"
 
-    - name: I want to install git
+    - name: I want to install git,tree,apache2
       apt: 
         name: "{{item}}"
         state: present
