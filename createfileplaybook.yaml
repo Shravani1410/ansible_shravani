@@ -1,8 +1,5 @@
----
-- hosts: all
-  become: yes
-  tasks:
+
       - name: i want to create file into ansible-node
         file: 
-            path: /home/shravani/myfile.txt
+            path: /home/shravani/myfile1.txt
             state: touch
