@@ -16,7 +16,7 @@
           state: present
         when: myresult.stderr == ""
 
-       - name: i want to install tree
+        - name: i want to install tree
          apt: 
            name: tree
            state: present
