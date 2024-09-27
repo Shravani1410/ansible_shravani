@@ -17,7 +17,7 @@
         notify: restartedservice
       
   handlers:
-      -name: restartedservice
-         service:
+      - name: restartedservice
+        service:
               name: apache2
               state: restarted
