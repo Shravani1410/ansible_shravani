@@ -1,7 +1,4 @@
----
- - hosts: javaserver
-   become: yes
-   tasks:
+
      - name: i want to install open JDK on ubuntu server
        apt:
           name: "{{myubuntujavapackage}}"
